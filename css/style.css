@@ -45,17 +45,18 @@ h1, .h1 {
 
 .large-p{
   font-size: 3vw;
+  color: #fff !important;
 }
 
 @media (max-width: 575px) {
   .large-p{
-    font-size: 5vw;
+    font-size: 5.5vw;
   }
 }
 
 @media (max-width: 575px) {
   h1, .h1 {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 
