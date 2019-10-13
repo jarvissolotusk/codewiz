@@ -730,6 +730,12 @@ link:focus,
 .hero-section {
   padding: 250px 0 290px;
 }
+@media (max-width: 991px) {
+  .hero-section {
+  padding: 25px 0 29px;
+  }
+}
+
 
 .hero-slider .prevArrow,
 .hero-slider .nextArrow {
