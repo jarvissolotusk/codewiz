@@ -50,13 +50,13 @@ h1, .h1 {
 
 @media (max-width: 575px) {
   .large-p{
-    font-size: 5.5vw;
+    font-size: 6vw;
   }
 }
 
 @media (max-width: 575px) {
   h1, .h1 {
-    font-size: 30px;
+    font-size: 33px;
   }
 }
 
@@ -170,7 +170,7 @@ h6, .h6 {
 
 .btn-primary {
   background: #ffbc3b;
-  color: #fff;
+  color: #000;
 }
 
 .btn-primary::before {
@@ -217,7 +217,7 @@ h6, .h6 {
 
 .btn-secondary:hover {
   background: #fff;
-  color: #fff;
+  color: #000;
   border: 1px solid #fff;
 }
 
@@ -733,7 +733,7 @@ link:focus,
 }
 @media (max-width: 991px) {
   .hero-section {
-  padding: 25px 0 29px;
+  padding: 30px 0 39px;
   }
 }
 
