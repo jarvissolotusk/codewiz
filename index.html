@@ -102,35 +102,35 @@
             </div>
             <div class="modal-body">
                 <div class="login">
-                    <form action="#" class="row">
+                    <form action="https://mailthis.to/codewizin@gmail.com" method="POST" encType="multipart/form-data" class="row needs-validation">
                        
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Your Name">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Your Name" required>
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="childName" name="childName" placeholder="Child's Name">
+                            <input type="text" class="form-control mb-3" id="childName" name="childName" placeholder="Child's Name" required>
                         </div>
-                        <div class="col-12">
+                        <!-- <div class="col-12">
                             <input type="text" class="form-control mb-3" id="schoolName" name="schoolName" placeholder="Child's School Name">
-                        </div>
+                        </div> -->
                         <div class="col-12">
                             <!-- <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password"> -->
-                            <select class="form-control mb-3" id="grade">
-                                <option>Select you child's grade</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                            <select class="form-control mb-3" id="grade" required>
+                                <option value="">Select you child's grade</option>
+                                <option value="srkgto1">Sr. KG - 1</option>
+                                <option value="2to3">2 - 3</option>
+                                <option value="4to6">4 - 6</option>
+                                <option value="7to9">7 - 9</option>
                               </select>
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                            <input type="number" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone" required>
                         </div>
                         <div class="col-12">
-                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email" required>
                         </div>
-                        
+                        <input type="hidden" name="_subject" value="Contact form submitted">
+                        <input type="hidden" name="_after" value="http://127.0.0.1:5500/thankyou.html">
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Book Now</button>
                         </div>
@@ -140,6 +140,7 @@
         </div>
     </div>
 </div>
+
 <!-- Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -261,9 +262,10 @@
         <a href="course-single.html">
           <h4 class="card-title">Pre-Reader(Grades Sr.KG - 1)</h4>
         </a>
+        <p class="card-text mb-0 font-weight-bold">Levels: Beginner, Intermediate & Advanced of 4 months each.</p>
         <p class="card-text mb-4"> From basics of computing, logic, sequences, procedures, turtle coding,
           UI based apps, simple games and much more taught in a fun and engaging way.</p>
-        <a href="course-single.html" class="btn btn-primary btn-sm">Book free demo now</a>
+        <a href="contact.html" data-toggle="modal" data-target="#signupModal" class="btn btn-primary btn-sm">Book free demo now</a>
         <a href="course-single.html" class="btn btn-primary-outline btn-sm my-2">curriculum & pricing</a>
       </div>
     </div>
@@ -278,8 +280,9 @@
           <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
         </ul> -->
         <a href="course-single.html">
-          <h4 class="card-title">Elementary(Grade 2 - 3)</h4>
+          <h4 class="card-title">Elementary(Grades 2 - 3)</h4>
         </a>
+        <p class="card-text mb-0 font-weight-bold">Levels: Beginner, Intermediate & Advanced of 4 months each.</p>
         <p class="card-text mb-4"> From basics of computing, logic, sequences, procedures, algorithms
             simple machine learning, mobile apps, games, augmented reality and much more.</p>
           <a href="course-single.html" class="btn btn-primary btn-sm">Book free demo now</a>
@@ -297,8 +300,9 @@
           <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
         </ul> -->
         <a href="course-single.html">
-          <h4 class="card-title">Middle(Grade 4 - 6)</h4>
+          <h4 class="card-title">Middle(Grades 4 - 6)</h4>
         </a>
+        <p class="card-text mb-0 font-weight-bold">Levels: Beginner, Intermediate & Advanced of 4 months each.</p>
         <p class="card-text mb-4">Loops, sequencing, events, conditionals, AI, web development, 
            chatbots and much more to convert you child's screen time to active screen time.</p>
           <a href="course-single.html" class="btn btn-primary btn-sm">Book free demo now</a>
@@ -316,8 +320,9 @@
           <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
         </ul> -->
         <a href="course-single.html">
-          <h4 class="card-title">High(Grade 7 - 9)</h4>
+          <h4 class="card-title">High(Grades 7 - 9)</h4>
         </a>
+        <p class="card-text mb-0 font-weight-bold">Levels: Beginner, Intermediate & Advanced of 4 months each.</p>
         <p class="card-text mb-4"> Loops, sequencing, events, OOPs, AI, machine learning, 
             python, physics based games and much more to provide creative freedom to express themselves.</p>
           <a href="course-single.html" class="btn btn-primary btn-sm">Book free demo now</a>
@@ -335,7 +340,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h6 class="text-white font-secondary mb-0"> CONVERT YOUR GAME PLAYER TO GAME DEVELOPER</h6>
+        <h6 class="font-secondary mb-0"> CONVERT YOUR GAME PLAYER TO GAME DEVELOPER</h6>
         <h2 class="section-title text-white">Coding For Kids Ages 5-14</h2>
         <a href="contact.html" class="btn btn-secondary">Book free demo now</a>
       </div>
@@ -493,7 +498,7 @@
 <script src="plugins/google-map/gmap.js"></script>
 
 <!-- Main Script -->
-<script src="js/script.js"></script>
+<script src="js/script.js"></script>  
 
 </body>
 </html>

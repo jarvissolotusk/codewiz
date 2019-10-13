@@ -201,7 +201,8 @@ h6, .h6 {
 
 .btn-secondary {
   background: #fff;
-  color: #ffbc3b;
+  /* color: #ffbc3b; */
+  color:#000;
   border: 1px solid #fff;
 }
 
