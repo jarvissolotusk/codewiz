@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Codewiz - Courses - Middle</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- fontawesome-icon -->
+  <link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  <div class="top-header py-2 bg-white">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg text-center text-lg-right">
+          <a class="text-color mr-3" href="callto:+918433820895"><strong><i class="fa fa-phone" aria-hidden="true"></i> Call</strong> +91 84338 20895</a>
+          <a class="text-color" target="_blank" href="https://api.whatsapp.com/send?phone=918433820895"><strong><i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp</strong></a>
+          <!-- <ul class="list-inline d-inline">
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#benefits">Benefits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#courses">COURSES & Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#about">About</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Book Free Demo</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="https://mailthis.to/codewizin@gmail.com" method="POST" encType="multipart/form-data" class="row needs-validation">
+                       
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="childName" name="childName" placeholder="Child's Name" required>
+                        </div>
+                        <!-- <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="schoolName" name="schoolName" placeholder="Child's School Name">
+                        </div> -->
+                        <div class="col-12">
+                            <!-- <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password"> -->
+                            <select class="form-control mb-3" id="grade" required>
+                                <option value="">Select you child's grade</option>
+                                <option value="srkgto1">Sr. KG - 1</option>
+                                <option value="2to3">2 - 3</option>
+                                <option value="4to6">4 - 6</option>
+                                <option value="7to9">7 - 9</option>
+                              </select>
+                        </div>
+                        <div class="col-12">
+                            <input type="number" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email" required>
+                        </div>
+                        <input type="hidden" name="_subject" value="Contact form submitted">
+                        <input type="hidden" name="_after" value="http://127.0.0.1:5500/thankyou.html">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Book Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- page title -->
+<section class="page-title-section overlay" data-background="images/banner/hero.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="index.html#courses">Our Courses</a></li>
+          <li class="list-inline-item text-white h3 font-secondary nasted">Middle(Grades 4 - 6)</li>
+        </ul>
+        <p class="text-lighten">Loops, sequencing, events, conditionals, AI, web development, chatbots and
+             much more to convert you child's screen time to active screen time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- section -->
+<section class="section-sm">
+  <div class="container">
+    
+    <!-- course info -->
+    <div class="row align-items-center mb-5">
+      <div class="col-xl-3 order-1 col-sm-6 mb-4 mb-xl-0">
+        <h2>Middle</h2>
+        <h5>Grades 4 - 6</h5>
+      </div>
+      <div class="col-xl-6 order-sm-3 order-xl-2 col-12 order-2">
+        <ul class="list-inline text-xl-center">
+          <li class="list-inline-item mr-4 mb-3 mb-sm-0">
+            <div class="d-flex align-items-center">
+              <i class="ti-book text-primary icon-md mr-2"></i>
+              <div class="text-left">
+                <h6 class="mb-0">LEVELS</h6>
+                <p class="mb-0">03</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-inline-item mr-4 mb-3 mb-sm-0">
+            <div class="d-flex align-items-center">
+              <i class="ti-alarm-clock text-primary icon-md mr-2"></i>
+              <div class="text-left">
+                <h6 class="mb-0">FREQUENCY</h6>
+                <p class="mb-0">2 times/week</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-inline-item mr-4 mb-3 mb-sm-0">
+            <div class="d-flex align-items-center">
+              <i class="ti-wallet text-primary icon-md mr-2"></i>
+              <div class="text-left">
+                <h6 class="mb-0">FEE</h6>
+                <p class="mb-0">₹ 1550 per month</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xl-3 text-sm-right text-left order-sm-2 order-3 order-xl-3 col-sm-6 mb-4 mb-xl-0">
+        <a href="contact.html" data-toggle="modal" data-target="#signupModal" class="btn btn-primary">Book Free Demo now</a>
+      </div>
+      <!-- border -->
+      <div class="col-12 mt-4 order-4">
+        <div class="border-bottom border-primary"></div>
+      </div>
+    </div>
+    <!-- course details -->
+    <div class="row">
+      <div class="col-12 mb-4">
+        <h3 class="mb-3">Course Curriculum - Basic Level - Months 1 - 4</h3>
+        <div class="col-12 px-0">
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-styled">
+                <li>Basic of Computing and Coding(optional)</li>
+                <li>Sequences</li>
+                <li>Algorithm to code</li>
+                <li>Variables & Data storage</li>
+                <li>Animation</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-styled">
+                <li>Mobile App Basics</li>
+                <li>Algorithm</li>
+                <li>App design basics</li>
+                <li>Mouse/Touch Events</li>
+                <li>Loops</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 mb-4">
+          <h3 class="mb-3">Course Curriculum - Intermediate Level - Months 5 - 8</h3>
+          <div class="col-12 px-0">
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="list-styled">
+                    <li>UI Design with Code</li>
+                    <li>Advanced Loops</li>
+                    <li>Timer Loops</li>
+                    <li>App Design</li>
+                    <li>Advance Mouse/Touch Events</li>
+                    <li>Advanced Looping</li>
+                    <li>App Appearance & Coloring</li>
+                    <li>Advance Life cycle events</li>
+                    <li>Chatbot build</li>
+                    <li>Advanced Chat App</li>
+
+
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-styled">
+                  <li>App Event Cycle</li>
+                  <li>Game Design</li>
+                  <li>Nested Loops</li>
+                  <li>App Publishing</li>
+                  <li>Conditionals</li>
+                  <li>Parallel Functions</li>
+                  <li>Chat App</li>
+                  <li>Cloud game app</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mb-4">
+            <h3 class="mb-3">Course Curriculum - Advanced Level - Months 9 - 12</h3>
+            <div class="col-12 px-0">
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="list-styled">
+                    <li>UI Design</li>
+                    <li>Simulation App</li>
+                    <li>Responsive Web Apps</li>
+                    <li>Native Apps</li>
+                    <li>Advance Web Pages</li>
+                    <li>Speech to Text</li>
+                    <li>NLP Realtime translation</li>
+                    <li>Predictive Analytics</li>
+                    <li>Image Processing with Machine learning(ML)</li>
+                    <li>Sentiment Identification with ML</li>
+                    <li>Image to text with ML</li>
+                    <li>Pattern recognition ML</li>
+
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="list-styled">
+                    <li>Frontend Development</li>
+                    <li>Hybrid Apps</li>
+                    <li>Native Simulation App</li>
+                    <li>Frontend Javascript</li>
+                    <li>Frontend HTML CSS</li>
+                    <li>Text to Speech</li>
+                    <li>Neural Networs</li>
+                    <li>Models</li>
+                    <li>Language Identification with ML</li>
+                    <li>Text and Speech processing with ML</li>
+                    <li>AI Game</li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+  </div>
+</section>
+<!-- /section -->
+
+<!-- cta -->
+<section class="section bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h6 class="font-secondary mb-0"> CONVERT YOUR GAME PLAYER TO GAME DEVELOPER</h6>
+          <h2 class="section-title text-white">Coding For Kids Ages 5-14</h2>
+          <a href="contact.html" class="btn btn-secondary" data-toggle="modal" data-target="#signupModal">Book free demo now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /cta -->
+<section><div class="container"><div class="row" style="height:40px;"></div></div></section>
+
+
+<!-- footer -->
+<footer>
+    <!-- newsletter -->
+    <div class="newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
+            <h3 class="text-white">Subscribe Now</h3>
+            <form action="#">
+              <div class="input-wrapper">
+                <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email...">
+                <button type="submit" value="send" class="btn btn-primary">Join</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer content -->
+    <div class="footer bg-footer section border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+            <!-- logo -->
+            <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a class="text-color mr-3" href="callto:+918433820895"><strong><i class="fa fa-phone" aria-hidden="true"></i> </strong> +91 84338 20895</a></li>
+              <li class="mb-2"><a class="text-color" target="_blank" href="https://api.whatsapp.com/send?phone=918433820895"><strong><i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp</strong></a></li>
+              <li class="mb-2"><a class="text-color" target="_blank" href="mailto:contact@codewiz.in"><i class="fa fa-envelope-o" aria-hidden="true"></i> contact@codewiz.in</a></li>
+            </ul>
+          </div>
+          <!-- company -->
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+            <!-- <h4 class="text-white mb-5">COMPANY</h4> -->
+            <ul class="list-unstyled">
+              <li class="mb-3"><a class="text-color" href="index.html#benefits">Benefits</a></li>
+            </ul>
+          </div>
+          <!-- links -->
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+            <!-- <h4 class="text-white mb-5">LINKS</h4> -->
+            <ul class="list-unstyled">
+              <li class="mb-3"><a class="text-color" href="index.html#courses">Courses</a></li>
+              <!-- <li class="mb-3"><a class="text-color" href="faqs.html">FAQs</a></li> -->
+            </ul>
+          </div>
+          <!-- support -->
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+            <!-- <h4 class="text-white mb-5">SUPPORT</h4> -->
+            <ul class="list-unstyled">
+              <li class="mb-3"><a class="text-color" href="index.html#about">About Us</a></li>
+            </ul>
+          </div>
+          <!-- support -->
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+            <!-- <h4 class="text-white mb-5">RECOMMEND</h4> -->
+            <ul class="list-unstyled">
+              <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- copyright -->
+    <div class="copyright py-4 bg-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7 text-sm-left text-center">
+            <p class="mb-0">Copyright © Solotusk Technologies LLP. All Rights Reserved.
+              <script>
+                var CurrentYear = new Date().getFullYear()
+                document.write(CurrentYear)
+              </script> 
+          </div>
+          <div class="col-sm-5 text-sm-right text-center">
+            <!-- <ul class="list-inline">
+              <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.facebook.com/themefisher"><i class="ti-facebook text-primary"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.twitter.com/themefisher"><i class="ti-twitter-alt text-primary"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block p-2" href="https://dribbble.com/themefisher"><i class="ti-dribbble text-primary"></i></a></li>
+            </ul> -->Theme By <a class="text-muted" href="https://themefisher.com">themefisher.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /footer -->
+  
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- mixitup filter -->
+<script src="plugins/mixitup/mixitup.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
