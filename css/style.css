@@ -55,7 +55,7 @@ h1, .h1 {
 
 @media (max-width: 575px) {
   h1, .h1 {
-    font-size: 45px;
+    font-size: 35px;
   }
 }
 
