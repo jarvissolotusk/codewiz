@@ -81,7 +81,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 @media (max-width: 575px) {
@@ -343,6 +343,12 @@ a h4:hover {
   margin-bottom: 30px;
 }
 
+@media (max-width: 575px) {
+  .section-title {
+    font-size: 35px;
+  }
+}
+
 .bg-cover {
   background-size: cover;
   background-position: center center;
@@ -415,6 +421,11 @@ a h4:hover {
 
 .font-secondary {
   font-family: "futura-bold";
+}
+@media (max-width: 575px) {
+  .font-secondary {
+    font-size: 20px;
+  }
 }
 
 .mb-10 {
